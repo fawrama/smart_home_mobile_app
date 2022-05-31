@@ -4,7 +4,7 @@ class CustomButton extends StatefulWidget {
   CustomButton({
     required Key key,
     required this.backgroundColor,
-    this.child,
+    required this.child,
     required this.txt,
   }) : super(key: key);
 
@@ -25,7 +25,7 @@ class _CustomButtonState extends State<CustomButton> {
     setState(() {
       flag = !flag;
       if (flag == true) {
-        widget.backgroundColor = Color.fromRGBO(0, 150, 136, 1);
+        widget.backgroundColor = Colors.teal;
         isSwitched = true;
         State = 'ON';
       } else {
@@ -40,7 +40,7 @@ class _CustomButtonState extends State<CustomButton> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 130,
+      margin: EdgeInsets.all(20),
       child: Material(
         color: widget.backgroundColor,
         child: InkWell(
@@ -48,28 +48,32 @@ class _CustomButtonState extends State<CustomButton> {
             toggle();
             print('${flag}');
           },
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                alignment: Alignment.center,
-                child: widget.child,
-              ),
-              Text('${widget.txt}'),
-              Switch(
-                value: isSwitched,
-                onChanged: (value) {
-                  setState(() {
-                    toggle();
-                  });
-                },
-                activeTrackColor: Colors.green,
-                activeColor: Colors.teal,
-                inactiveThumbColor: Colors.red,
-                inactiveTrackColor: Colors.redAccent,
-              ),
-              Text('${State}'),
-            ],
+          child: SizedBox(
+            width: 150,
+            height: 150,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  alignment: Alignment.center,
+                  child: widget.child,
+                ),
+                Text('${widget.txt}'),
+                Switch(
+                  value: isSwitched,
+                  onChanged: (value) {
+                    setState(() {
+                      toggle();
+                    });
+                  },
+                  activeTrackColor: Colors.green,
+                  activeColor: Colors.teal,
+                  inactiveThumbColor: Colors.red,
+                  inactiveTrackColor: Colors.redAccent,
+                ),
+                Text('${State}'),
+              ],
+            ),
           ),
         ),
       ),

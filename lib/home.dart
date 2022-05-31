@@ -13,9 +13,6 @@ class homepage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                margin: EdgeInsets.all(20),
-                width: 150,
-                height: 150,
                 child: Column(
                   children: [
                     btt.CustomButton(
@@ -28,9 +25,6 @@ class homepage extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.all(20),
-                width: 150,
-                height: 150,
                 child: Column(
                   children: [
                     btt.CustomButton(
@@ -48,9 +42,6 @@ class homepage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                margin: EdgeInsets.all(20),
-                width: 150,
-                height: 150,
                 child: Column(
                   children: [
                     btt.CustomButton(
@@ -63,9 +54,6 @@ class homepage extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.all(20),
-                width: 150,
-                height: 150,
                 child: Column(
                   children: [
                     btt.CustomButton(
@@ -83,9 +71,6 @@ class homepage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                margin: EdgeInsets.all(20),
-                width: 150,
-                height: 150,
                 child: Column(
                   children: [
                     btt.CustomButton(
@@ -98,9 +83,6 @@ class homepage extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.all(20),
-                width: 150,
-                height: 150,
                 child: Column(
                   children: [
                     btt.CustomButton(
@@ -111,6 +93,60 @@ class homepage extends StatelessWidget {
                     ),
                   ],
                 ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class kitchen extends StatelessWidget {
+  const kitchen({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Row(
+        children: [
+          Column(
+            children: [
+              btt.CustomButton(
+                backgroundColor: Colors.grey,
+                txt: 'coffee machine',
+                child: Icon(Icons.coffee_maker),
+                key: UniqueKey(),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class living_room extends StatelessWidget {
+  const living_room({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Column(
+        children: [
+          Row(
+            children: [
+              btt.CustomButton(
+                txt: 'TV',
+                backgroundColor: Colors.grey,
+                child: Icon(Icons.tv_rounded),
+                key: UniqueKey(),
+              ),
+              btt.CustomButton(
+                txt: 'sound system',
+                backgroundColor: Colors.grey,
+                child: Icon(Icons.speaker),
+                key: UniqueKey(),
               ),
             ],
           ),
