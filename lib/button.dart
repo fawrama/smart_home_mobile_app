@@ -65,6 +65,8 @@ class _CustomButtonState extends State<CustomButton> {
                 },
                 activeTrackColor: Colors.green,
                 activeColor: Colors.teal,
+                inactiveThumbColor: Colors.red,
+                inactiveTrackColor: Colors.redAccent,
               ),
               Text('${State}'),
             ],
