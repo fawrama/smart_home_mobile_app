@@ -3,7 +3,6 @@
 this application is a frontend interface of a smart home application that allows the user to control diffrent devices in the house. app is still in progress.
 
 ## ToDo
-* Add tabs for seperate rooms.
 * Connect to data base (build the backend).
 
 ## How it works
@@ -12,10 +11,11 @@ from the home.dart we call the custom buttons that are found in the button.dart,
 
 ## Screen Shots 
 
-![68c34fd2-4501-4114-b59b-0aa84d0e8d52](https://user-images.githubusercontent.com/71787197/171256168-3ab44f6c-f853-4eb9-8f67-6b5932b0be60.jpg)
+all devices
+![4298bea6-880e-439e-927d-5e4fecd089e6](https://user-images.githubusercontent.com/71787197/171300163-3063a0b4-6ef6-42ec-b862-01d641ebea1f.jpg)
 
-off
+Kitchen
+![41ea7ad4-793f-4ab5-a7e4-61f6bd7be19c](https://user-images.githubusercontent.com/71787197/171300199-f05c7739-c348-4c6e-bba4-c752baf19ed8.jpg)
 
-![b402dc95-d997-4089-a6ce-ebfddd0ae89b](https://user-images.githubusercontent.com/71787197/171256193-973072b7-77d5-4853-b614-317f39523193.jpg)
-
-on
+living room
+![b4299b83-f1d0-40da-8b17-091a39b7ff08](https://user-images.githubusercontent.com/71787197/171300225-80648978-5771-4c23-9906-f1d27f910599.jpg)
