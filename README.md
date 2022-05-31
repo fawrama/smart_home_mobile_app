@@ -1,16 +1,21 @@
-# mad_assignment
+# Smart home control
 
-A new Flutter project.
+this application is a frontend interface of a smart home application that allows the user to control diffrent devices in the house. app is still in progress.
 
-## Getting Started
+## ToDo
+* Add tabs for seperate rooms.
+* Connect to data base (build the backend).
 
-This project is a starting point for a Flutter application.
+## How it works
 
-A few resources to get you started if this is your first Flutter project:
+from the home.dart we call the custom buttons that are found in the button.dart, these custom buttons are made so that they have a switch that toggle on touch and change colors from grey(off) and green(on).
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Screen Shots 
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![b0e9c243-aaf5-4214-8a59-ec689cba6780](https://user-images.githubusercontent.com/71787197/171254022-192fafdd-ee30-4b58-9d47-b575bb532e81.jpg)
+
+off
+
+![ff0497a6-9931-4131-af2b-4f412ea8a7a7](https://user-images.githubusercontent.com/71787197/171254157-e0bae0b0-45ca-4f64-861e-781472a4983f.jpg)
+
+on
